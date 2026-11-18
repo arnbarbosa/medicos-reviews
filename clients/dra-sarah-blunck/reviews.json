@@ -4,58 +4,62 @@
     "specialty": "Hematologista e Onco-Hematologista",
     "crm": "181979-SP",
     "rating": 5.0,
-    "total_reviews": 6
+    "total_reviews": 5,
+    "google_place_id": "0x94ce03aafb4ded41:0x6aea76894a57394",
+    "google_reviews_url": "https://www.google.com/maps/place/Dra.+Sarah+Blunck/@-23.9782422,-46.3093196,17z/data=!4m8!3m7!1s0x94ce03aafb4ded41:0x6aea76894a57394!8m2!3d-23.9782422!4d-46.3093196!9m1!1b1"
   },
   "reviews": [
     {
-      "id": 1,
-      "name": "Camila Ribas",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0VU5sUlFWRXQzUkdkc1gydDZhRVozU1c5VVRtYxAB",
+      "name": "MarcoseMirella Marcos",
       "rating": 5,
-      "date": "2024-11-01",
-      "text": "Excelente profissional. Muito atenta à fala do paciente, disposta a esclarecer todas as dúvidas de forma didática e acessível, além de muito empática, o que deixa a consulta leve e o paciente à vontade para expor suas demandas e preocupações sem medo. Maravilhosa!",
+      "date": "2026-11-11",
+      "date_approx": true,
+      "text": "Dra Sarah … Ótima hematologia, super atenciosa e prestativa com seus pacientes. Que Deus te ilumine sempre.",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKVglhNPPJDT_mG5HYpSGtXVkIzOh46Zy2ge1igm4GIhJLFdw=w96-h96-p-rp-mo-br100",
       "verified": true
     },
     {
-      "id": 2,
-      "name": "Maria Elisa",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21reU1rUllRekpIZUhGR2FYTkpNVzUzTlc5M1ZHYxAB",
+      "name": "Valeria Goncalves",
       "rating": 5,
-      "date": "2024-10-15",
-      "text": "Procurei a Dra. Sarah com um problema muito grave, e além dela ter descoberto meu diagnóstico, me tratou e hoje estou ótima. Ela é maravilhosa, atenciosa e nos explica tudo com todos os detalhes. Obrigada Dra.",
+      "date": "2026-11-11",
+      "date_approx": true,
+      "text": "A Dra. Sarah foi muito atenciosa durante a consulta. Todas as.minhas perguntas foram respondidas e nada ficou sem esclarecimento.  Solicitou exames complementares, retornei e está tudo bem comigo. Eu recomendo.",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocLtbs-tyPd5ll2jDc5oH-jKLm6wHM_vo9g9kLAAFnvrl27tqA=w96-h96-p-rp-mo-br100",
       "verified": true
     },
     {
-      "id": 3,
-      "name": "Eduardo Fernandes",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xnM2VIb3RObTFWZDFoWmJWOW5kVEp2YkhGTWFXYxAB",
+      "name": "Rosana Muro",
       "rating": 5,
-      "date": "2025-07-10",
-      "text": "A consulta foi ótima e a Dra. Sarah é muito atenciosa e explica tudo detalhadamente.",
+      "date": "2026-11-11",
+      "date_approx": true,
+      "text": "Dra Sarah extremamente capacitada,  tirando todas as nossaa duvidas com segurança, nos deixando tranquilas e confiante",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjUeHvNsasGcBl6Kmbg3UhsKIY3V8BRhOdmhNAJgCgCAeZkZ_00=w96-h96-p-rp-mo-br100",
       "verified": true
     },
     {
-      "id": 4,
-      "name": "Valeria Gonçalves",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsYWJUaHJVa3B4YkRoMVltWTNiMXBaTkVOa1NuYxAB",
+      "name": "drika drikinha",
       "rating": 5,
-      "date": "2026-09-20",
-      "text": "A Dra. Sarah me deixou super tranquila e esclareceu todas as minhas dúvidas. Super atenciosa! Eu recomendo!",
+      "date": "2026-11-11",
+      "date_approx": true,
+      "text": "",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocI3sZMLHsb9imPTCwZ48nsSUI71dxEqjFuCCOI8q4vttRKyew=w96-h96-p-rp-mo-br100",
       "verified": true
     },
     {
-      "id": 5,
-      "name": "Celso",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kMGRuUm9VSEJLT0djeFZrVlRWVXMxZVVsM04wRRAB",
+      "name": "Gustavo Penha Paiva Magalhães",
       "rating": 5,
-      "date": "2025-02-05",
-      "text": "Excelente médica, atenciosa, competente e dedicada.",
-      "verified": true
-    },
-    {
-      "id": 6,
-      "name": "Patricia Santos",
-      "rating": 5,
-      "date": "2026-11-15",
-      "text": "Atendimento impecável. A Dra. Sarah tem uma paciência incrível e explica tudo com clareza. Muito recomendo!",
+      "date": "2026-11-11",
+      "date_approx": true,
+      "text": "",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocLwCAYKQeMPQsYwsOHY2D8YHdXbqJsuTrzY4Xh0JJDZ2dnNxA=w96-h96-p-rp-mo-br100",
       "verified": true
     }
   ],
-  "last_updated": "2026-11-18T13:48:00Z",
-  "source": "Google Reviews"
+  "last_updated": "2026-11-18T20:30:00Z",
+  "source": "Google Reviews (copiado do perfil no Google Maps em 18/11/2026)"
 }
