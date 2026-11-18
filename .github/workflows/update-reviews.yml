@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '0 9 * * *'  # 09:00 UTC (06:00 em Brasília), todos os dias
   workflow_dispatch:     # permite rodar manualmente pela aba Actions
+  push:                  # roda ao cadastrar cliente ou mudar o script
+    branches: [main]
+    paths:
+      - 'clients/*/config.json'
+      - 'scripts/**'
+      - '.github/workflows/update-reviews.yml'
 
 permissions:
   contents: write        # necessário para o commit automático
