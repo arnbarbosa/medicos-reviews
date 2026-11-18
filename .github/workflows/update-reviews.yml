@@ -1,0 +1,35 @@
+name: Update Reviews
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # 09:00 UTC todos os dias
+  workflow_dispatch:     # permite trigger manual
+
+jobs:
+  update-reviews:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install -g axios
+      
+      - name: Update reviews
+        run: node scripts/update-reviews.js
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add clients/*/reviews.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update reviews" && git push)

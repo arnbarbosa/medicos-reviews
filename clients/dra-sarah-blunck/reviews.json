@@ -1,0 +1,61 @@
+{
+  "professional": {
+    "name": "Dra. Sarah Blunck Paiva Magalhães",
+    "specialty": "Hematologista e Onco-Hematologista",
+    "crm": "181979-SP",
+    "rating": 5.0,
+    "total_reviews": 6
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Camila Ribas",
+      "rating": 5,
+      "date": "2024-11-01",
+      "text": "Excelente profissional. Muito atenta à fala do paciente, disposta a esclarecer todas as dúvidas de forma didática e acessível, além de muito empática, o que deixa a consulta leve e o paciente à vontade para expor suas demandas e preocupações sem medo. Maravilhosa!",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Maria Elisa",
+      "rating": 5,
+      "date": "2024-10-15",
+      "text": "Procurei a Dra. Sarah com um problema muito grave, e além dela ter descoberto meu diagnóstico, me tratou e hoje estou ótima. Ela é maravilhosa, atenciosa e nos explica tudo com todos os detalhes. Obrigada Dra.",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "Eduardo Fernandes",
+      "rating": 5,
+      "date": "2025-07-10",
+      "text": "A consulta foi ótima e a Dra. Sarah é muito atenciosa e explica tudo detalhadamente.",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "name": "Valeria Gonçalves",
+      "rating": 5,
+      "date": "2026-09-20",
+      "text": "A Dra. Sarah me deixou super tranquila e esclareceu todas as minhas dúvidas. Super atenciosa! Eu recomendo!",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "name": "Celso",
+      "rating": 5,
+      "date": "2025-02-05",
+      "text": "Excelente médica, atenciosa, competente e dedicada.",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "name": "Patricia Santos",
+      "rating": 5,
+      "date": "2026-11-15",
+      "text": "Atendimento impecável. A Dra. Sarah tem uma paciência incrível e explica tudo com clareza. Muito recomendo!",
+      "verified": true
+    }
+  ],
+  "last_updated": "2026-11-18T13:48:00Z",
+  "source": "Google Reviews"
+}
