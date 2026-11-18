@@ -1,190 +1,59 @@
-# 📋 Médicos Reviews — Sistema Centralizado de Avaliações
+# Médicos Reviews
 
-Repositório centralizado para gerenciar reviews dinâmicos de múltiplos clientes médicos via GitHub + GitHub Actions.
+Avaliações do Google de vários clientes médicos, atualizadas automaticamente 1x por dia e servidas como JSON para os sites.
 
-## 🎯 Como Funciona
+## Como funciona
 
-1. **GitHub Actions** roda automaticamente **1x por dia** (09:00 UTC)
-2. Script busca/atualiza reviews de cada cliente
-3. Faz commit automático das mudanças
-4. Sites dos clientes fazem **fetch do JSON** via URL direta
-
-## 📁 Estrutura
+1. O GitHub Actions roda todo dia às 06:00 (Brasília). Também dá para rodar manualmente: aba **Actions → Update Reviews → Run workflow**.
+2. `scripts/update-reviews.js` consulta o **Google Places API (New)** de cada cliente em `clients/`.
+3. As avaliações recebidas são **mescladas** com as já salvas. O Google devolve no máximo 5 por consulta, então as antigas continuam no arquivo.
+4. Se algo mudou, o robô faz commit do `reviews.json`. Os sites leem direto:
 
 ```
-medicos-reviews/
-├── clients/
-│   ├── dra-sarah-blunck/
-│   │   ├── reviews.json (dados dos reviews)
-│   │   └── config.json  (configuração do cliente)
-│   ├── dr-joao-cardiologista/
-│   │   ├── reviews.json
-│   │   └── config.json
-│   └── [novo-cliente]/
-├── .github/workflows/
-│   └── update-reviews.yml (orquestra as atualizações)
-├── scripts/
-│   └── update-reviews.js (script de atualização)
-└── README.md
+https://raw.githubusercontent.com/arnbarbosa/medicos-reviews/main/clients/<cliente>/reviews.json
 ```
 
-## 🚀 Próximos Passos
+Custo: 1 consulta por cliente por dia (~30/mês), dentro da cota gratuita mensal do Places API.
 
-### 1. Fazer Push para GitHub
+## Configuração (uma vez)
 
-```bash
-cd medicos-reviews
-git remote add origin https://github.com/arnbarbosa/medicos-reviews.git
-git branch -M main
-git push -u origin main
-```
+1. Google Cloud Console: num projeto com faturamento ativo, ative **Places API (New)** e crie uma **chave de API**. Restrinja a chave a essa API.
+2. Neste repositório: **Settings → Secrets and variables → Actions → New repository secret**
+   - Nome: `GOOGLE_PLACES_API_KEY`
+   - Valor: a chave
+3. Rode o workflow manualmente uma vez e confira o log.
 
-### 2. Integrar no Site da Dra. Sarah
+## Adicionar cliente
 
-Adicione este código no `index.html` (na seção de depoimentos):
-
-```html
-<script>
-  // Carregar reviews dinamicamente
-  fetch('https://raw.githubusercontent.com/arnbarbosa/medicos-reviews/main/clients/dra-sarah-blunck/reviews.json')
-    .then(r => r.json())
-    .then(data => {
-      const container = document.getElementById('reviews-carousel');
-      const reviews = data.reviews;
-      
-      let html = `<div class="reviews-wrapper">`;
-      reviews.forEach(review => {
-        html += `
-          <div class="review-card">
-            <div class="review-header">
-              <strong>${review.name}</strong>
-              <span class="stars">${'★'.repeat(review.rating)}</span>
-            </div>
-            <p class="review-text">${review.text}</p>
-            <small class="review-date">${new Date(review.date).toLocaleDateString('pt-BR')}</small>
-          </div>
-        `;
-      });
-      html += `</div>`;
-      container.innerHTML = html;
-    });
-</script>
-
-<div id="reviews-carousel"></div>
-```
-
-### 3. CSS para Estilo
-
-```css
-.reviews-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 40px 0;
-}
-
-.review-card {
-  padding: 20px;
-  border: 1px solid #e0d4c9;
-  border-radius: 8px;
-  background: #fafaf8;
-}
-
-.review-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.stars {
-  color: #d4af37;
-  font-size: 14px;
-}
-
-.review-text {
-  margin: 10px 0;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.review-date {
-  color: #999;
-  font-size: 12px;
-}
-```
-
-## 🔄 Adicionar Novo Cliente
-
-### 1. Criar pasta
-
-```bash
-mkdir clients/dr-novo-cliente
-```
-
-### 2. Criar `reviews.json`
+Crie `clients/<slug>/config.json`:
 
 ```json
 {
-  "professional": {
-    "name": "Dr. Nome Completo",
-    "specialty": "Especialidade",
-    "crm": "CRM-UF 123456",
-    "rating": 5.0,
-    "total_reviews": 5
-  },
-  "reviews": [
-    {
-      "id": 1,
-      "name": "Paciente Name",
-      "rating": 5,
-      "date": "2026-11-18",
-      "text": "Review text aqui",
-      "verified": true
-    }
-  ],
-  "last_updated": "2026-11-18T13:48:00Z",
-  "source": "Google Reviews"
+  "place_id": "",
+  "search_query": "Nome do médico, especialidade, endereço, cidade - UF",
+  "max_reviews": 10
 }
 ```
 
-### 3. Adicionar ao `.github/workflows/update-reviews.yml`
+Com `place_id` vazio, a primeira execução busca o local pelo `search_query` e grava o `place_id` encontrado. Confira no log se o local está certo.
 
-A workflow já funciona para todos os clientes! Sem mudanças necessárias.
+## Formato do `reviews.json`
 
-### 4. Fazer Push
-
-```bash
-git add clients/dr-novo-cliente/
-git commit -m "feat: add Dr. Novo Cliente"
-git push
+```json
+{
+  "professional": { "name": "...", "rating": 5, "total_reviews": 5, "google_place_id": "...", "google_reviews_url": "..." },
+  "reviews": [
+    { "id": "places/.../reviews/...", "name": "Autor", "rating": 5, "date": "2026-11-10",
+      "text": "Texto original", "photo": "https://lh3.googleusercontent.com/...", "author_url": "...", "source": "google" }
+  ],
+  "last_updated": "2026-11-18T09:00:00Z"
+}
 ```
 
-## 📊 URL de Acesso
+Avaliações sem texto ficam no arquivo, mas o carrossel do site não as exibe.
 
-Cada cliente acessa seus reviews em:
+## Testar sem chave
 
 ```
-https://raw.githubusercontent.com/arnbarbosa/medicos-reviews/main/clients/[cliente]/reviews.json
+PLACES_MOCK=resposta.json CLIENT=dra-sarah-blunck node scripts/update-reviews.js
 ```
-
-Exemplo:
-- Dra. Sarah: `https://raw.githubusercontent.com/arnbarbosa/medicos-reviews/main/clients/dra-sarah-blunck/reviews.json`
-- Dr. João: `https://raw.githubusercontent.com/arnbarbosa/medicos-reviews/main/clients/dr-joao-cardiologista/reviews.json`
-
-## ⚙️ Configuração Automática
-
-O GitHub Actions roda automaticamente:
-- **Horário:** 09:00 UTC (todos os dias)
-- **Ação:** Atualiza `last_updated` em cada `reviews.json`
-- **Commit:** Automático se houver mudanças
-
-## 💡 Próximos Passos Profissionais
-
-1. **Integrar com Google Local Services API** (autenticado, dados reais)
-2. **Adicionar webhook** para atualizar on-demand
-3. **Dashboard** para gerenciar clientes
-4. **Cache invalidation** para sites dos clientes
-
----
-
-**Criado com ❤️ para escalabilidade**
