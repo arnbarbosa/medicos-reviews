@@ -3,63 +3,68 @@
     "name": "Dra. Sarah Blunck Paiva Magalhães",
     "specialty": "Hematologista e Onco-Hematologista",
     "crm": "181979-SP",
-    "rating": 5.0,
-    "total_reviews": 5,
-    "google_place_id": "0x94ce03aafb4ded41:0x6aea76894a57394",
-    "google_reviews_url": "https://www.google.com/maps/place/Dra.+Sarah+Blunck/@-23.9782422,-46.3093196,17z/data=!4m8!3m7!1s0x94ce03aafb4ded41:0x6aea76894a57394!8m2!3d-23.9782422!4d-46.3093196!9m1!1b1"
+    "rating": 5,
+    "total_reviews": 4,
+    "google_place_id": "ChIJQe1N-6oDzpQRlHOllGinrgY",
+    "google_reviews_url": "https://maps.google.com/?cid=481506277787530132&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
   },
   "reviews": [
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0VU5sUlFWRXQzUkdkc1gydDZhRVozU1c5VVRtYxAB",
+      "id": "places/ChIJQe1N-6oDzpQRlHOllGinrgY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t0VU5sUlFWRXQzUkdkc1gydDZhRVozU1c5VVRtYxAB",
       "name": "MarcoseMirella Marcos",
       "rating": 5,
       "date": "2026-11-11",
-      "date_approx": true,
-      "text": "Dra Sarah … Ótima hematologia, super atenciosa e prestativa com seus pacientes. Que Deus te ilumine sempre.",
-      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKVglhNPPJDT_mG5HYpSGtXVkIzOh46Zy2ge1igm4GIhJLFdw=w96-h96-p-rp-mo-br100",
-      "verified": true
+      "text": "Dra Sarah …\nÓtima hematologia, super atenciosa e prestativa com seus pacientes. Que Deus te ilumine sempre.",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKVglhNPPJDT_mG5HYpSGtXVkIzOh46Zy2ge1igm4GIhJLFdw=s128-c0x00000000-cc-rp-mo",
+      "verified": true,
+      "author_url": "https://www.google.com/maps/contrib/100097286407426263612/reviews",
+      "source": "google"
     },
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT21reU1rUllRekpIZUhGR2FYTkpNVzUzTlc5M1ZHYxAB",
+      "id": "places/ChIJQe1N-6oDzpQRlHOllGinrgY/reviews/Ci9DQUlRQUNvZENodHljRjlvT21reU1rUllRekpIZUhGR2FYTkpNVzUzTlc5M1ZHYxAB",
       "name": "Valeria Goncalves",
       "rating": 5,
       "date": "2026-11-11",
-      "date_approx": true,
       "text": "A Dra. Sarah foi muito atenciosa durante a consulta. Todas as.minhas perguntas foram respondidas e nada ficou sem esclarecimento.  Solicitou exames complementares, retornei e está tudo bem comigo. Eu recomendo.",
-      "photo": "https://lh3.googleusercontent.com/a/ACg8ocLtbs-tyPd5ll2jDc5oH-jKLm6wHM_vo9g9kLAAFnvrl27tqA=w96-h96-p-rp-mo-br100",
-      "verified": true
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocLtbs-tyPd5ll2jDc5oH-jKLm6wHM_vo9g9kLAAFnvrl27tqA=s128-c0x00000000-cc-rp-mo",
+      "verified": true,
+      "author_url": "https://www.google.com/maps/contrib/104474208980157196614/reviews",
+      "source": "google"
     },
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xnM2VIb3RObTFWZDFoWmJWOW5kVEp2YkhGTWFXYxAB",
+      "id": "places/ChIJQe1N-6oDzpQRlHOllGinrgY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xnM2VIb3RObTFWZDFoWmJWOW5kVEp2YkhGTWFXYxAB",
       "name": "Rosana Muro",
       "rating": 5,
       "date": "2026-11-11",
-      "date_approx": true,
       "text": "Dra Sarah extremamente capacitada,  tirando todas as nossaa duvidas com segurança, nos deixando tranquilas e confiante",
-      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjUeHvNsasGcBl6Kmbg3UhsKIY3V8BRhOdmhNAJgCgCAeZkZ_00=w96-h96-p-rp-mo-br100",
-      "verified": true
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjUeHvNsasGcBl6Kmbg3UhsKIY3V8BRhOdmhNAJgCgCAeZkZ_00=s128-c0x00000000-cc-rp-mo",
+      "verified": true,
+      "author_url": "https://www.google.com/maps/contrib/109122829527997656519/reviews",
+      "source": "google"
     },
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsYWJUaHJVa3B4YkRoMVltWTNiMXBaTkVOa1NuYxAB",
+      "id": "places/ChIJQe1N-6oDzpQRlHOllGinrgY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsYWJUaHJVa3B4YkRoMVltWTNiMXBaTkVOa1NuYxAB",
       "name": "drika drikinha",
       "rating": 5,
       "date": "2026-11-11",
-      "date_approx": true,
       "text": "",
-      "photo": "https://lh3.googleusercontent.com/a/ACg8ocI3sZMLHsb9imPTCwZ48nsSUI71dxEqjFuCCOI8q4vttRKyew=w96-h96-p-rp-mo-br100",
-      "verified": true
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocI3sZMLHsb9imPTCwZ48nsSUI71dxEqjFuCCOI8q4vttRKyew=s128-c0x00000000-cc-rp-mo",
+      "verified": true,
+      "author_url": "https://www.google.com/maps/contrib/114196308581735314677/reviews",
+      "source": "google"
     },
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kMGRuUm9VSEJLT0djeFZrVlRWVXMxZVVsM04wRRAB",
+      "id": "places/ChIJQe1N-6oDzpQRlHOllGinrgY/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kMGRuUm9VSEJLT0djeFZrVlRWVXMxZVVsM04wRRAB",
       "name": "Gustavo Penha Paiva Magalhães",
       "rating": 5,
       "date": "2026-11-11",
-      "date_approx": true,
       "text": "",
-      "photo": "https://lh3.googleusercontent.com/a/ACg8ocLwCAYKQeMPQsYwsOHY2D8YHdXbqJsuTrzY4Xh0JJDZ2dnNxA=w96-h96-p-rp-mo-br100",
-      "verified": true
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocLwCAYKQeMPQsYwsOHY2D8YHdXbqJsuTrzY4Xh0JJDZ2dnNxA=s128-c0x00000000-cc-rp-mo",
+      "verified": true,
+      "author_url": "https://www.google.com/maps/contrib/110926930516461386171/reviews",
+      "source": "google"
     }
   ],
-  "last_updated": "2026-11-18T20:30:00Z",
-  "source": "Google Reviews (copiado do perfil no Google Maps em 18/11/2026)"
+  "last_updated": "2026-11-18T20:53:06.907Z",
+  "source": "Google Places API"
 }
