@@ -7,6 +7,16 @@
   },
   "reviews": [
     {
+      "id": "places/ChIJ5XmSqLYdzpQRUNSEn94Ip_8/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pRd1FraDZkVXR0TFd4Q1RtMW1PVXRwVlc1RVNXYxAB",
+      "name": "Rayssa Santos",
+      "rating": 5,
+      "date": "2026-11-18",
+      "text": "Ótima ginecologista! Me senti muito acolhida e à vontade durante toda a consulta. Passa muita segurança, tira todas as dúvidas sem pressa e tem um atendimento impecável.",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjWt11RspxVgW-bKYWyIFXiB67WbMYW0i4nJcOmeQJsWixwXQj3B3w=s128-c0x00000000-cc-rp-mo",
+      "author_url": "https://www.google.com/maps/contrib/100812572235444612044/reviews",
+      "source": "google"
+    },
+    {
       "id": "places/ChIJ5XmSqLYdzpQRUNSEn94Ip_8/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GbFMwbGhVRjlKZDJ4T05VRm1kM1ZOVDNWSWJHYxAB",
       "name": "Bella maria",
       "rating": 5,
@@ -58,5 +68,5 @@
     }
   ],
   "source": "Google Places API",
-  "last_updated": "2026-11-19T00:12:31.990Z"
+  "last_updated": "2026-11-22T16:55:33.133Z"
 }
