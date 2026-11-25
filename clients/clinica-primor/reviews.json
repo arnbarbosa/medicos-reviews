@@ -1,7 +1,7 @@
 {
   "professional": {
     "rating": 4.5,
-    "total_reviews": 252,
+    "total_reviews": 253,
     "google_place_id": "ChIJ5XmSqLYdzpQRUNSEn94Ip_8",
     "google_reviews_url": "https://maps.google.com/?cid=18421702553034347600&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
   },
@@ -68,5 +68,5 @@
     }
   ],
   "source": "Google Places API",
-  "last_updated": "2026-11-22T16:55:33.133Z"
+  "last_updated": "2026-11-25T18:59:24.651Z"
 }
